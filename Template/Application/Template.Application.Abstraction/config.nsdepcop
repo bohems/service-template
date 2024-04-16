@@ -1,0 +1,14 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3" MaxIssueCount="10000">
+    <Allowed From="Template.Application.Abstraction.*" To="Template.Application.Abstraction.*" />
+    <Allowed From="Template.Application.Abstraction.*" To="Template.Domain.*" />
+    <Allowed From="Template.Application.Abstraction.*" To="Dex.Extensions.*" />
+    <Allowed From="Template.Application.Abstraction.*" To="Dex.Entity.*" />
+    <Allowed From="Template.Application.Abstraction.Exceptions" To="Shared.Domain.Exceptions" />
+    <Allowed From="Template.Application.Abstraction.Repositories.*" To="Shared.Dal.Abstractions.Interfaces" />
+    <Allowed From="Template.Application.Abstraction.*" To="Dex.DistributedCache.Services.*" />    
+    <Allowed From="Template.Application.*" To="Shared.UseCase.*" />
+    <Allowed From="Template.Application.*" To="Shared.Dal.*" />
+    <Allowed From="Template.Application.*" To="Dex.Ef.*" />
+    <Allowed From="Template.Application.*" To="Shared.Api.*" />
+    <Allowed From="Template.Application.*" To="Microsoft.Extensions.*" />
+</NsDepCopConfig>

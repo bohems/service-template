@@ -1,0 +1,11 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3" MaxIssueCount="10000">
+    <Allowed From="Template.Contract.*" To="MassTransit" />
+    <Allowed From="Template.Contract.*" To="Dex.MassTransit.Rabbit" />
+    <Allowed From="Template.Contract.*" To="Dex.Cap.Outbox.Interfaces" />
+    <Allowed From="Template.Contract.*" To="Dex.Cap.Outbox.Models" />
+    <Allowed From="Template.Contract.*" To="Notification.Domain.Models.Push" />
+    <Allowed From="Template.Contract.*" To="Notification.Contracts.*" />
+    
+    <Allowed From="Template.Contract.*" To="Template.Dal.Public.*" />
+    <Allowed From="Template.Contract.*" To="Template.Contract.*" />
+</NsDepCopConfig>

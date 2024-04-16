@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>{TargetFramework}</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\Shared\Shared.Dal\Shared.Dal.csproj" />
+        <ProjectReference Include="..\Template.Dal.Shared\Template.Dal.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.4.27">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ReadOnlyTemplateDbContext.cs">
+        <DependentUpon>TemplateDbContext.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

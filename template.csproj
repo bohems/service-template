@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Dex.Template.Service</PackageId>
+    <PackageVersion>0.0.4</PackageVersion>
+    <Title>Шаблон сервиса</Title>
+    <Authors>Dex</Authors>
+    <Description></Description>
+    <PackageTags></PackageTags>
+    <PackageProjectUrl>https://github.com/dex-it/service-template</PackageProjectUrl>
+
+    <PackageType>Template</PackageType>
+    <TargetFramework>net6.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LocalizeTemplates>false</LocalizeTemplates>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Template\**\*" Exclude="Template\**\bin\**;Template\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath=".\" />
+  </ItemGroup>
+
+</Project>

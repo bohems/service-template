@@ -1,0 +1,17 @@
+{
+  "Serilog": {
+    "MinimumLevel": "Information",
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "formatter": "",
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}"
+        }
+      }
+    ]
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "",
+  }
+}

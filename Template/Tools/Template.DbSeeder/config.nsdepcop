@@ -1,0 +1,11 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3">      
+    <Allowed From="Template.*" To="Admin.Dal.*" />
+    <Allowed From="Template.*" To="Microsoft.Extensions.*" />
+    <Allowed From="Template.*" To="Shared.*" />
+    <Allowed From="Template.*" To="Admin.Domain.*" />
+    <Allowed From="Template.*" To="Bogus.*" />
+    <Allowed From="Template.*" To="Microsoft.EntityFrameworkCore.*" />
+    <Allowed From="Template.*" To="CsvHelper.*" />
+    <Allowed From="Template.DbSeeder.*" To="Template.Dal.*" />
+   
+</NsDepCopConfig>

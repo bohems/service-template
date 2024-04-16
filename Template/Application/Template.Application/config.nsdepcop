@@ -1,0 +1,21 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3" MaxIssueCount="10000">
+    <Allowed From="Template.Application.*" To="Template.Application.Abstraction.*" />
+    <Allowed From="Template.Application.*" To="Template.Domain.*" />
+    <Allowed From="Template.Application.*" To="Dex.Extensions.*" />
+    <Allowed From="Template.Application.*" To="Dex.Entity.*" />
+    <Allowed From="Template.Application.Exceptions" To="Shared.Domain.Exceptions" />
+    <Allowed From="Template.Application.Repositories.*" To="Shared.Dal.Abstractions.Interfaces" />
+    <Allowed From="Template.Application.*" To="Shared.UseCase.*" />
+    <Allowed From="Template.Application.*" To="Shared.*" />
+    <Allowed From="Template.Application.*" To="Dex.Ef.*" />
+    <Allowed From="Template.Application.*" To="Shared.Api.*" />
+    <Allowed From="Template.Application.*" To="Microsoft.Extensions.*" />
+    <Allowed From="Template.Application.*" To="Notification.Client.*" />
+    <Allowed From="Template.Application.*" To="Dex.SecurityTokenProvider.*" />
+    <Allowed From="Template.Application.*" To="AutoMapper.*" />
+    <Allowed From="Template.Application.*" To="Dex.Cap.Outbox.*" />
+    <Allowed From="Template.Application.*" To="MassTransit.*" />
+    <Allowed From="Template.Application.*" To="Template.Application.IntegrationEvents.*" />
+    <Allowed From="Template.Application.*" To="Template.Application.*" />
+    <Allowed From="Template.Application.*" To="Google.Protobuf.Collections.*" />
+</NsDepCopConfig>

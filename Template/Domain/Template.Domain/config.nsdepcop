@@ -1,0 +1,5 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3">
+    <Allowed From="Template.Domain.*" To="Template.Domain.*" />
+    <Allowed From="Template.Domain.*" To="Dex.Entity.*" />
+    <Allowed From="Template.Domain.*" To="Dex.Specifications.*" />
+</NsDepCopConfig>

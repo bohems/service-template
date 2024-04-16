@@ -1,0 +1,16 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3">      
+    <Allowed From="Template.Dal.*" To="Microsoft.EntityFrameworkCore.*" />
+    <Allowed From="Template.Migrations.*" To="Microsoft.EntityFrameworkCore.*" />
+    <Allowed From="Template.Migrations.*" To="System.*" />
+    <Allowed From="Template.Dal.*" To="Template.Domain.*" />
+    <Allowed From="Template.Dal.*" To="Microsoft.Extensions.*" />
+    <Allowed From="Template.Dal.*" To="Shared.*" />
+    <Allowed From="Template.Dal.*" To="System.*" />
+    <Allowed From="Template.Dal.*" To="Template.Application.Abstraction.*" />
+    <Allowed From="Template.Dal.*" To="AutoMapper.*" />
+    <Allowed From="Template.Dal.*" To="Dex.Extensions.*" />
+    <Allowed From="Template.Dal.*" To="Dex.Cap.*" />
+    <Allowed From="Template.Dal.*" To="Template.Dal.EntityConfigurations.*" />
+    <Allowed From="Template.Dal.*" To="Template.Dal.Repository.*" />
+    <Allowed From="Template.Dal.*" To="Template.Contract.*" />
+</NsDepCopConfig>

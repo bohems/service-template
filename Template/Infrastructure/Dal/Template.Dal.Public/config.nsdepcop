@@ -1,0 +1,8 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3">      
+    <Allowed From="Template.Dal.Public.*" To="Dex.Entity.*" />
+    <Allowed From="Template.Dal.Public.*" To="Microsoft.EntityFrameworkCore.*" />
+    <Allowed From="Template.Dal.Public.*" To="Template.Dal.Public.*" />
+    <Allowed From="Template.Dal.Public.*" To="Shared.*" />
+    <Allowed From="Template.Dal.Public.*" To="System.*" />
+    <Allowed From="Template.Dal.Public.*" To="Dex.Specifications.*" />    
+</NsDepCopConfig>

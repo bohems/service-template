@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "dex-it.ru/",
+  "classifications": [
+    "Service"
+  ],
+  "name": "Service",
+  "identity": "Dex.Template.Service",
+  "shortName": "service",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "Template",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!ReadMe)",
+          "exclude": 
+          [
+              "README.md"
+          ]
+      }
+      ]
+    }
+  ],
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "enableQuotelessLiterals": true,
+      "choices": [
+        {
+          "choice": "net8.0"
+        },
+        {
+          "choice": "net7.0"
+        },
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "replaces": "{TargetFramework}",
+      "defaultValue": "net6.0"
+    }
+  },
+  "postActions": [
+    {
+      "description": "Add Template.Application.csproj, Template.Application.Abstraction.csproj, Template.Contract.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.Application.csproj",
+          "Template.Application.Abstraction.csproj",
+          "Template.Contract.csproj"
+        ],
+        "solutionFolder": "Template\\Application"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.Domain.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.Domain.csproj"
+        ],
+        "solutionFolder": "Template\\Domain"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.csproj to root project",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.csproj"
+        ],
+        "solutionFolder": "Template\\Infrastructure\\API"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.Dal.csproj, Template.Dal.Public.csproj, Template.Dal.Shared.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.Dal.csproj",
+          "Template.Dal.Public.csproj",
+          "Template.Dal.Shared.csproj"
+        ],
+        "solutionFolder": "Template\\Infrastructure\\Dal"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.Services.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.Services.csproj"
+        ],
+        "solutionFolder": "Template\\Infrastructure"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.UnitTests.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.UnitTests.csproj"
+        ],
+        "solutionFolder": "Template\\Tests"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    },
+    {
+      "description": "Add Template.DbSeeder.csproj to root .sln",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "args": {
+        "projectFiles": [
+          "Template.DbSeeder.csproj"
+        ],
+        "solutionFolder": "Template\\Tools"
+      },
+      "applyFileRenamesToArgs": [
+        "solutionFolder"
+      ],
+      "manualInstructions": [
+        {
+          "text": ""
+        }
+      ],
+      "continueOnError": true
+    }
+  ]
+}

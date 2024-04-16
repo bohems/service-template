@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>{TargetFramework}</TargetFramework>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\Shared\Shared.Api\Shared.Api.csproj" />
+        <ProjectReference Include="..\..\..\..\Shared\Shared.Dal\Shared.Dal.csproj" />
+        <ProjectReference Include="..\..\Dal\Template.Dal\Template.Dal.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.4.27">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Development.local2.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+    </ItemGroup>
+
+</Project>

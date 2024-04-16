@@ -1,0 +1,36 @@
+﻿<NsDepCopConfig IsEnabled="true" ChildCanDependOnParentImplicitly="true" InheritanceDepth="3">      
+     <Allowed From="Template.*" To="Shared.*" />
+     <Allowed From="Template.*" To="Template.*" />
+     <Allowed From="Template.*" To="Microsoft.AspNetCore.*" />
+     <Allowed From="Template.*" To="System.ComponentModel.DataAnnotations.*" />
+     <Allowed From="Template.*" To="Microsoft.Extensions.*" />
+     <Allowed From="Template.*" To="AutoMapper.*" />
+     <Allowed From="Template.*" To="Template.Dal.*" />
+     <Allowed From="Template.*" To="MassTransit.*" />
+     <Allowed From="Template.*" To="Template.Application.Abstraction.*" />
+     <Allowed From="Template.*" To="System.*" />
+     <Allowed From="Template.*" To="Template.Domain.*" />
+     <Allowed From="Template.*" To="Microsoft.EntityFrameworkCore.*" />
+     <Allowed From="Template.*" To="Notification.Client.*" />
+     <Allowed From="Template.*" To="Dex.Extensions.*" />
+     <Allowed From="Template.*" To="Microsoft.OData.*" />
+     <Allowed From="Template.*" To="Microsoft.AspNet.OData.*" />
+     <Allowed From="Template.*" To="Swashbuckle.AspNetCore.SwaggerGen.*" />
+     <Allowed From="Template.*" To="gRPC.UserStore.*" />
+     <Allowed From="Template.*" To="Dex.MassTransit.Rabbit.*" />
+     <Allowed From="Template.*" To="HealthChecks.Aws.S3.*" />
+     <Allowed From="Template.*" To="Amazon.S3.*" />
+     <Allowed From="Template.*" To="Amazon.Runtime.*" />
+     <Allowed From="Template.*" To="Grpc.AspNetCore.Server.*" />
+     <Allowed From="Template.*" To="Grpc.Net.ClientFactory.*" />
+     <Allowed From="Template.*" To="Grpc.Core.*" />
+     <Allowed From="Template.*" To="Profile.Dal.Public.*" />
+     <Allowed From="Template.*" To="OData.Swagger.Services.*" />
+     <Allowed From="Template.*" To="Dex.Cap.Outbox.*" />
+     <Allowed From="Template.*" To="Dex.SecurityTokenProvider.*" />
+     <Allowed From="Template.*" To="Dex.SecurityToken.DistributedStorage.*" />
+     <Allowed From="Template.*" To="Google.Protobuf.Collections.*" />
+     <Allowed From="Template.*" To="Dex.DistributedCache.ActionFilters.*" />
+     <Allowed From="Template.*" To="Dex.DistributedCache.Extensions.*" />
+  
+</NsDepCopConfig>
